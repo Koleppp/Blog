@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
  
-    <title>Blog</title>
+    <title>Contact Me</title>
+    <link href='img/inaedit1.png' rel='shortcut icon'>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     
@@ -16,7 +17,7 @@
   </head>
   <body>
 
-
+    <script src="js/script.js"></script>
   <!-- Script php -->
   
 
@@ -30,10 +31,10 @@
   </button>
   <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
     <div class="navbar-nav justify-content-center">
+      <a class="nav-link" href="index.html" style="color: aliceblue;">Main Page</a>
       <a class="nav-link" href="me.html" style="color: aliceblue;">About Me</a>
       <a class="nav-link" href="friends.html" style="color: aliceblue;">My Friends</a>
       <a class="nav-link" href="kontak.html" style="color: aliceblue;">Contact Us</a>
-      <a class="nav-link" href="index.html" style="color: aliceblue;">Back</a>
       
     </div>
   </div>
@@ -55,23 +56,26 @@
 
   <!-- Form saran dan kritik -->
 <div class="saran">
-  <form method="POST" target="_blank" action="kirim.php">
+  <form id="contact-form" method="POST" target="_blank" action="https://formspree.io/f/mayvkolz">
 <div class="container-sm" style="padding-right: 200px; padding-left: 200px; margin-bottom: 50px;">
-<h3 align="center" style="margin-top: 20px; margin: bottom 5px; font-family:Arial; font-weight:bold;">Saran dan Kritik</h3>
+<h3 align="center" style="margin-top: 20px; margin: bottom 5px; font-family:Arial; font-weight:bold;">Contact Me</h3>
 <hr>
   <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Name</label>
-  <input type="text" class="form-control"  placeholder="Jaka" name="nama">
+  <input type="text" class="form-control"  placeholder="Jaka" name="full-name">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Ideas and recommendations</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="masukan"></textarea>
+  <label for="exampleFormControlInput1" class="form-label">Subject</label>
+  <input type="text" class="form-control"  placeholder="Subject" id="exampleFormControlInput" name="subject">
 </div>
-<input type="hidden" name="nowa" value="628981355511">
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Ideas and recommendations</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+</div>
 <button type="submit" class="btn btn-success" name="submit">Send</button>
 </div> 
 </form>
@@ -117,7 +121,7 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-sm-12">
-        <p>&copy; copyright 2020 | built by,  <a href="https://instagram.com/syarif_jr_01">Syarif Maulana</a> </p>
+        <p>&copy; copyright 2022 | built by,  <a href="https://instagram.com/syarif_jr_01">Syarif Maulana</a> </p>
       </div>
       
     </div>
@@ -130,6 +134,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+    <script src="js/script.js"></script>
   </body>
 
 </html>
